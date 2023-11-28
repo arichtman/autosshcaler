@@ -1,3 +1,5 @@
+use std::net::IpAddr;
+
 use autosshcale_rs;
 use clap::Parser;
 use wol::MacAddr;
@@ -5,12 +7,12 @@ use wol::MacAddr;
 #[derive(Parser)]
 #[clap(version, about, long_about = None)]
 struct Args {
-    #[clap(name = "MAC_ADDRESS", short = 'm', long = "mac-address", value_parser)]
-    mac_address: String,
+    #[clap(name = "IP_ADDRESS", short = 'a', long = "ip-address", value_parser)]
+    ip_address: IpAddr,
 }
 
 fn main() {
     let args = Args::parse();
-    let mac_address: MacAddr = args.mac_address.parse().unwrap();
-    println!("Got {mac_address}");
+    let ip_address: IpAddr = args.ip_address;
+    println!("Got {ip_address}");
 }
