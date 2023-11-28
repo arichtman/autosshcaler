@@ -1,3 +1,6 @@
+// TODO: remove for release
+#![allow(dead_code, unused_imports, unused_variables, unreachable_code)]
+
 include!(concat!(env!("OUT_DIR"), "/_includes.rs"));
 
 use std::net::{IpAddr, Ipv4Addr, Ipv6Addr};
