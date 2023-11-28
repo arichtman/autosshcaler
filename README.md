@@ -56,3 +56,4 @@ Call it dogfooding enthusiasm.
 - [trippy docs re CAP_NET_RAW](https://docs.rs/trippy/latest/trippy/#privileges)
 - [dns-lookup crate](https://crates.io/crates/dns-lookup)
 - [russh example ssh client run command](https://github.com/warp-tech/russh/blob/main/russh/examples/client_exec_simple.rs)
+- [wol-rs code](https://github.com/fengyc/wol-rs/blob/main/src/lib.rs)
