@@ -1,13 +1,32 @@
 [package]
 name = "autosshcaler"
+description = "Custom Kubernetes autoscaler using SSH and WoL."
 version = "0.1.0"
 edition = "2021"
+authors = [ "Ariel Richtman <git@richtman.au>" ]
+keywords = [ "kubernetes", "autoscaler", "k8s", "api" ]
+categories = [ "virtualization" ]
+license = "GPL-3.0-only"
+readme = "README.md"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "autosshcale_rs"
+path = "src/lib.rs"
+doc = false
+
+[[bin]]
+name = "autosshcaler"
+path = "src/main.rs"
+required-features = ["bin"]
+
+[features]
+bin = [ "dep:clap" ]
 
 [dependencies]
+clap = { version = "4.4.10", features = ["derive", "env"], optional = true }
 prost = "0.12.3"
 prost-types = "0.12.3"
+wol-rs = "1.0.1"
 
 [build-dependencies]
 prost-build = "0.12.3"
