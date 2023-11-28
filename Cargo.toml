@@ -8,6 +8,8 @@ keywords = [ "kubernetes", "autoscaler", "k8s", "api" ]
 categories = [ "virtualization" ]
 license = "GPL-3.0-only"
 readme = "README.md"
+repository = "https://github.com/arichtman/autosshcaler.git"
+homepage = "https://github.com/arichtman/autosshcaler.git"
 
 [lib]
 name = "autosshcale_rs"
