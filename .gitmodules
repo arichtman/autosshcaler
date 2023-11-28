@@ -1,0 +1,9 @@
+[submodule "autoscaler"]
+	path = src/k8s.io/autoscaler
+	url = https://github.com/kubernetes/autoscaler.git
+[submodule "apimachinery"]
+	path = src/k8s.io/apimachinery
+	url = https://github.com/kubernetes/apimachinery.git
+[submodule "k8s.io/api"]
+	path = src/k8s.io/api
+	url = https://github.com/kubernetes/api.git
