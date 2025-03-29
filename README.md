@@ -1,5 +1,7 @@
 # autosshcaler
 
+**Suspended**: Moved to Codeberg
+
 Custom Kubernetes cluster autoscaler using SSH and WoL.
 
 ## Road map
